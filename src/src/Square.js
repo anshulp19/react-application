@@ -15,23 +15,14 @@ const square = {
   width: '34px'
 };
 
-class Square extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      value: null
-    };
-  }
+export function Square(props) {
+  return (
+    <button 
+      style={square} 
+      onClick={props.onClick}>
+        {props.value}
+    </button>
+  );
 
-  render() {
-    return (
-      <button style={square} 
-        onClick={() => this.props.onClick()}>
-        {this.props.value}
-      </button>
-    );
-  };
-    
-}
 
-module.exports = Square;
+//module.exports = Square;
