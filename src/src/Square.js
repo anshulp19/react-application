@@ -23,6 +23,6 @@ export function Square(props) {
         {props.value}
     </button>
   );
-}
+
 
 //module.exports = Square;
